@@ -1,5 +1,5 @@
 import '../styles/pages/home.css';
-import background from '../assets/BACKGROUND.jpg';
+import background from '../assets/BACKGROUND.webp';
 import logo from '../assets/logo.svg';
 import homeimagen from '../assets/homeimage.webp';
 
@@ -24,7 +24,7 @@ export function Home() {
     <>
       <section className='home_section'>
         <div className="background_container">
-          <img src={background} alt="" />
+          <img src={background} alt="Fondo con degradado" />
         </div>
         <nav className="nav_content">
           <a href="">
