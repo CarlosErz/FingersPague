@@ -132,9 +132,14 @@
     /* Inicio del degradado */
   }
   50% {
-    border-color: #3e2164;
+    border-color: #736288;
     /* Color intermedio del borde */
     background-position: 50% 50%;
+  }
+  75% {
+    border-color: #411f6a;
+    /* Color intermedio del borde */
+    background-position: 70% 50%;
   }
 
   100% {
