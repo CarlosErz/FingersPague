@@ -136,6 +136,9 @@
   .home_bot {
     width: 80%;
   }
+  .nav_content img{
+    width: 40px;
+  }
 
 
 }
@@ -164,6 +167,13 @@
 
   .home_bot {
     width: 80%;
+  }
+  .nav_content img{
+    width: 30px;
+  }
+  .nav_content ul{
+    flex-direction: column;
+    display: none;
   }
 
 }
