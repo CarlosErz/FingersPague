@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  
+
 }
 
 .home_text {
@@ -102,11 +102,84 @@
 }
 
 .home_bot {
-  border: 3px solid #432B63;
-  box-sizing: border-box;
-  width: 617px;
 
+  width: 50%;
+  /* Para que el ancho se ajuste al contenido */
+  animation: animatedBorder 5s infinite linear;
+  /* Animación del borde */
+  display: inline-block;
+  /* Para que el span se ajuste al contenido */
+  padding: 10px;
+  /* Espaciado para el borde */
+  border: 3px solid transparent;
+  /* Establecer un borde inicial */
+  background-image: linear-gradient(to right, #c300ff, #FF009D);
+  background-clip: border-box;
+  /* Degradado de fondo */
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Hace el texto transparente */
+  font-size: 2rem;
+  /* Tamaño del texto */
+}
 
+/* Animación del borde */
+@keyframes animatedBorder {
+  0% {
+    border-color: #442b63;
+    /* Color inicial del borde */
+    background-position: 30% 50%;
+    /* Inicio del degradado */
+  }
+  50% {
+    border-color: #19003A;
+    /* Color intermedio del borde */
+    background-position: 50% 50%;
+  }
+
+  100% {
+    border-color: #442b63;
+    /* Color final del borde */
+    background-position: 100% 50%;
+  }
+}
+
+/* 1366 x   768 */
+
+@media (min-width: 1025px) and (max-width: 1380px) {
+
+  .home_text {
+    width: 100%;
+    align-items: center;
+
+  }
+
+  .nav_logo {
+    width: 40px;
+  }
+
+  .home_bot {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .homeimagen {
+    width: 345px;
+    height: 707px;
+  }
+
+  .home_text span {
+    font-size: 127px;
+    letter-spacing: 17.92px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav_content img {
+    width: 40px;
+  }
 }
 
 
@@ -136,7 +209,8 @@
   .home_bot {
     width: 80%;
   }
-  .nav_content img{
+
+  .nav_content img {
     width: 40px;
   }
 
@@ -168,10 +242,12 @@
   .home_bot {
     width: 80%;
   }
-  .nav_content img{
+
+  .nav_content img {
     width: 30px;
   }
-  .nav_content ul{
+
+  .nav_content ul {
     flex-direction: column;
     display: none;
   }
