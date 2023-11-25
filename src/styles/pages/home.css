@@ -122,6 +122,13 @@
   font-size: 2rem;
   /* Tamaño del texto */
 }
+.menu_icon,
+.close_icon {
+  font-size: 24px; 
+  cursor: pointer; 
+  color: #FFF; 
+  display: none; 
+}
 
 /* Animación del borde */
 @keyframes animatedBorder {
@@ -218,6 +225,39 @@
   .nav_content img {
     width: 40px;
   }
+  .menu_icon {
+    display: block; /* Mostrar el ícono de menú en dispositivos móviles */
+    margin-right: 15px; /* Espacio entre el ícono y los elementos del menú */
+  }
+
+  .close_icon {
+    display: none; /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
+  }
+
+  .nav_content ul {
+    display: none; /* Ocultar la lista de navegación en dispositivos móviles (se mostrará al abrir el menú) */
+  }
+
+  .nav_content ul.open {
+    display: flex; /* Mostrar la lista de navegación al abrir el menú */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el menú desplegable */
+    position: absolute; /* Posición absoluta para cubrir la pantalla */
+    top: 80px; /* Altura del navbar */
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Espaciado para los elementos del menú */
+  }
+
+  .nav_content ul.open li {
+    margin-bottom: 10px; /* Espacio entre elementos del menú */
+  }
+
+  .nav_content ul.open li a {
+    color: #FFF; /* Color del texto del menú */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 18px; /* Tamaño del texto del menú */
+  }
 
 
 }
@@ -255,6 +295,39 @@
   .nav_content ul {
     flex-direction: column;
     display: none;
+  }
+  .menu_icon {
+    display: block; /* Mostrar el ícono de menú en dispositivos móviles */
+    margin-right: 15px; /* Espacio entre el ícono y los elementos del menú */
+  }
+
+  .close_icon {
+    display: none; /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
+  }
+
+  .nav_content ul {
+    display: none; 
+  }
+
+  .nav_content ul.open {
+    display: flex; /* Mostrar la lista de navegación al abrir el menú */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el menú desplegable */
+    position: absolute; /* Posición absoluta para cubrir la pantalla */
+    top: 80px; /* Altura del navbar */
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Espaciado para los elementos del menú */
+  }
+
+  .nav_content ul.open li {
+    margin-bottom: 10px; /* Espacio entre elementos del menú */
+  }
+
+  .nav_content ul.open li a {
+    color: #FFF; /* Color del texto del menú */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 18px; /* Tamaño del texto del menú */
   }
 
 }
