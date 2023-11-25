@@ -5,6 +5,46 @@
   overflow: hidden;
 }
 
+/* Estilos CSS */
+.nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 99%;
+  padding: 10px 10px;
+  position: sticky;
+  z-index: 2;
+}
+
+.nav_content img {
+  width: 50px;
+}
+
+.nav_content ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 35px;
+}
+
+.nav_content ul li a {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.52px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Resto de estilos... */
+
+
 .background_container {
   position: absolute;
   width: 100%;
@@ -30,13 +70,12 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  height: 100%;
+  
 }
 
 .home_text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100%;
   width: 70%;
@@ -53,39 +92,48 @@
   color: #FFF;
   text-align: justify;
   font-family: Montserrat;
-  font-size: 128px;
+  font-size: 10rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 17.92px;
   text-transform: uppercase;
-  
+
 }
-.home_bot{
+
+.home_bot {
   border: 3px solid #432B63;
   box-sizing: border-box;
-  width: 80%;
-  
+  width: 617px;
+
 
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .home_flex{
+  .home_flex {
     flex-direction: column;
+    height: 100%;
   }
-  .home_text{
+
+  .home_text {
     width: 100%;
+    align-items: center;
   }
-  .homeimagen{
+
+  .homeimagen {
     width: 200px;
     height: 707px;
   }
-  .home_text span{
+
+  .home_text span {
     font-size: 100px;
     letter-spacing: 17.92px;
+    justify-content: center;
+    text-align: center;
   }
-  .home_bot{
+
+  .home_bot {
     width: 80%;
   }
 
@@ -101,6 +149,7 @@
 
   .home_text {
     width: 100%;
+    align-items: center;
   }
 
   .homeimagen {
@@ -110,9 +159,10 @@
 
   .home_flex {
     flex-direction: column;
+    height: 80%;
   }
 
-  .home_bot{
+  .home_bot {
     width: 80%;
   }
 
