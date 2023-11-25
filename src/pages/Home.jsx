@@ -1,18 +1,17 @@
 import '../styles/pages/home.css';
 import background from '../assets/BACKGROUND.jpg';
 import logo from '../assets/logo.svg';
-import homeimagen from '../assets/homeimage.png';
+import homeimagen from '../assets/homeimage.webp';
 
 
 export function Home() {
   // Función para abrir el menú
   function openMenu() {
     document.querySelector('.nav_content_ul').classList.add('open');
-    document.querySelector('.menu_icon').style.display = 'none'; // Oculta el ícono de menú
-    document.querySelector('.close_icon').style.display = 'block'; // Muestra el ícono de cerrar menú
+    document.querySelector('.menu_icon').style.display = 'none';
+    document.querySelector('.close_icon').style.display = 'block'; 
   }
 
-  // Función para cerrar el menú
   function closeMenu() {
     document.querySelector('.nav_content_ul').classList.remove('open');
     document.querySelector('.menu_icon').style.display = 'block';
@@ -31,8 +30,6 @@ export function Home() {
           <a href="">
             <img className='nav_logo' src={logo} alt="" />
           </a>
-
-          {/* Icono del menú de hamburguesa para abrir el menú */}
           <span className="menu_icon" onClick={openMenu}>
             <svg width="35" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".65564" width="34" height="4" rx="2" fill="#A9A9A9" /><rect x="12.5" y="8.65564" width="22" height="4" rx="2" fill="#A9A9A9" /><rect x="20.5" y="16.6556" width="14" height="4" rx="2" fill="#A9A9A9" /></svg>
 
