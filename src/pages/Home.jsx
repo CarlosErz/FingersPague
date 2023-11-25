@@ -9,7 +9,7 @@ export function Home() {
   function openMenu() {
     document.querySelector('.nav_content_ul').classList.add('open');
     document.querySelector('.menu_icon').style.display = 'none';
-    document.querySelector('.close_icon').style.display = 'block'; 
+    document.querySelector('.close_icon').style.display = 'block';
   }
 
   function closeMenu() {
@@ -28,7 +28,7 @@ export function Home() {
         </div>
         <nav className="nav_content">
           <a href="">
-            <img className='nav_logo' src={logo} alt="" />
+            <img title='logotipo' className='nav_logo' src={logo} alt="logotipo que asemeja un mano en F" />
           </a>
           <span className="menu_icon" onClick={openMenu}>
             <svg width="35" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".65564" width="34" height="4" rx="2" fill="#A9A9A9" /><rect x="12.5" y="8.65564" width="22" height="4" rx="2" fill="#A9A9A9" /><rect x="20.5" y="16.6556" width="14" height="4" rx="2" fill="#A9A9A9" /></svg>
@@ -39,20 +39,20 @@ export function Home() {
           </span>
 
           <ul className='nav_content_ul'>
-            <li><a className='nav_link' href="">Home</a></li>
-            <li><a className='nav_link' href="">About</a></li>
+            <li><a title='Home' className='nav_link' href="">Home</a></li>
+            <li><a  className='nav_link' href="">About</a></li>
             <li><a className='nav_link' href="">Contact</a></li>
           </ul>
         </nav>
         <div className="home_content">
           <div className="home_flex">
-            <div className="home_text">
+            <div title='Nombre del Producto Fingers bot' className="home_text">
               <span>Fingers</span>
               <div className="home_bot">
                 <span>Bot</span>
               </div>
             </div>
-            <img src={homeimagen} alt="" className="homeimagen" />
+            <img title='Mano entre cerrada' src={homeimagen} className="homeimagen" alt='Mano entrecerrada ' />
           </div>
         </div>
       </section>
