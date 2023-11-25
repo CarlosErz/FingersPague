@@ -122,13 +122,15 @@
   font-size: 2rem;
   /* Tamaño del texto */
 }
+
 .menu_icon,
 .close_icon {
-  font-size: 24px; 
-  cursor: pointer; 
-  color: #FFF; 
-  display: none; 
+  font-size: 2px;
+  cursor: pointer;
+  color: #FFF;
+  display: none;
 }
+
 
 /* Animación del borde */
 @keyframes animatedBorder {
@@ -138,11 +140,13 @@
     background-position: 30% 50%;
     /* Inicio del degradado */
   }
+
   50% {
     border-color: #736288;
     /* Color intermedio del borde */
     background-position: 50% 50%;
   }
+
   75% {
     border-color: #411f6a;
     /* Color intermedio del borde */
@@ -225,38 +229,39 @@
   .nav_content img {
     width: 40px;
   }
+
   .menu_icon {
-    display: block; /* Mostrar el ícono de menú en dispositivos móviles */
-    margin-right: 15px; /* Espacio entre el ícono y los elementos del menú */
+    display: block;
+    /* Mostrar el ícono de menú en dispositivos móviles */
+    margin-right: 15px;
+    /* Espacio entre el ícono y los elementos del menú */
   }
 
   .close_icon {
-    display: none; /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
+    display: none;
+    /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
   }
 
   .nav_content ul {
-    display: none; /* Ocultar la lista de navegación en dispositivos móviles (se mostrará al abrir el menú) */
-  }
+    display: none;
 
-  .nav_content ul.open {
-    display: flex; /* Mostrar la lista de navegación al abrir el menú */
-    flex-direction: column; /* Alinear elementos verticalmente */
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el menú desplegable */
-    position: absolute; /* Posición absoluta para cubrir la pantalla */
-    top: 80px; /* Altura del navbar */
+  }
+  .nav_content_ul.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #080013db;
+    position: fixed;
     left: 0;
+    top: 80px;
     width: 100%;
-    padding: 20px; /* Espaciado para los elementos del menú */
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    pointer-events: auto;
   }
-
-  .nav_content ul.open li {
-    margin-bottom: 10px; /* Espacio entre elementos del menú */
-  }
-
-  .nav_content ul.open li a {
-    color: #FFF; /* Color del texto del menú */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 18px; /* Tamaño del texto del menú */
+  li {
+    margin-top: 50px;
   }
 
 
@@ -296,38 +301,45 @@
     flex-direction: column;
     display: none;
   }
+
   .menu_icon {
-    display: block; /* Mostrar el ícono de menú en dispositivos móviles */
-    margin-right: 15px; /* Espacio entre el ícono y los elementos del menú */
+    display: block;
+    /* Mostrar el ícono de menú en dispositivos móviles */
+    margin-right: 15px;
+    /* Espacio entre el ícono y los elementos del menú */
   }
 
   .close_icon {
-    display: none; /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
+    display: none;
+    margin-right: 20px;
   }
 
-  .nav_content ul {
-    display: none; 
+  .nav_content_ul {
+    display: none;
   }
 
-  .nav_content ul.open {
-    display: flex; /* Mostrar la lista de navegación al abrir el menú */
-    flex-direction: column; /* Alinear elementos verticalmente */
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el menú desplegable */
-    position: absolute; /* Posición absoluta para cubrir la pantalla */
-    top: 80px; /* Altura del navbar */
+  .nav_content_ul.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #080013db;
+    position: fixed;
     left: 0;
+    top: 80px;
     width: 100%;
-    padding: 20px; /* Espaciado para los elementos del menú */
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    pointer-events: auto;
   }
 
-  .nav_content ul.open li {
-    margin-bottom: 10px; /* Espacio entre elementos del menú */
+  li.nav_link {
+    margin-top: 20px;
   }
 
-  .nav_content ul.open li a {
-    color: #FFF; /* Color del texto del menú */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 18px; /* Tamaño del texto del menú */
+  li {
+    margin-top: 50px;
   }
+
 
 }
