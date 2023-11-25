@@ -1,3 +1,5 @@
+@import url(./var.css);
+
 body{
     right: 0;
     left: 0;
@@ -5,4 +7,6 @@ body{
     bottom: 0;
     padding: 0;
     margin: 0;
+    background-color: var(--background_home);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
