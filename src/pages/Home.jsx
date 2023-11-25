@@ -1,7 +1,8 @@
 import '../styles/pages/home.css';
-import background from '../assets/BACKGROUND.webp';
+//import background from '../assets/BACKGROUND.webp';
 import logo from '../assets/logo.svg';
 import homeimagen from '../assets/homeimage.webp';
+import {Doc} from './sections/Doc.jsx';
 
 
 export function Home() {
@@ -23,9 +24,7 @@ export function Home() {
   return (
     <>
       <section className='home_section'>
-        <div className="background_container">
-          <img src={background} alt="Fondo con degradado" />
-        </div>
+      
         <nav className="nav_content">
           <a href="">
             <img title='logotipo' className='nav_logo' src={logo} alt="logotipo que asemeja un mano en F" />
@@ -40,7 +39,7 @@ export function Home() {
 
           <ul className='nav_content_ul'>
             <li><a title='Home' className='nav_link' href="">Home</a></li>
-            <li><a  className='nav_link' href="">About</a></li>
+            <li><a className='nav_link' href="">About</a></li>
             <li><a className='nav_link' href="">Contact</a></li>
           </ul>
         </nav>
@@ -56,6 +55,10 @@ export function Home() {
           </div>
         </div>
       </section>
+      <Doc />
+      
+
+
     </>
   );
 }

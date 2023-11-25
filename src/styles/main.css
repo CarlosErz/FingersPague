@@ -11,4 +11,7 @@ body{
     margin: 0;
     background-color: var(--background_home);
     font-family: 'Montserrat', sans-serif;
+    max-width: 1366px;
+    margin: 0 auto;
+    
 }
