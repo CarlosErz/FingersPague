@@ -1,3 +1,44 @@
+.introducing_fingers{
+
+
+  margin-top: 80px;
+
+}
+.introducing_fingers_flex{
+  position: relative;
+}
+.introducing_fingers_flex img{
+  width: 50%;
+  view-timeline-name: --hands;
+  view-timeline-axis: block;
+  animation-timeline: --hands;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 0%);
+
+  animation-fill-mode: both;
+}
+.introducing_fingers_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}
+.introducing_fingers_title{
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.introducing_fingers_paragraph{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
 .content_documentacion {
   margin-top: 50px;
   position: relative;
@@ -98,6 +139,23 @@
 @media (min-width: 1025px) and (max-width: 1380px) {}
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .introducing_fingers_title{
+    font-size: 1.5rem;
+  }
+  .introducing_fingers_flex img{
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 0%);
+
+    animation-fill-mode: both;
+  }
+  .introducing_fingers_text{
+    width: 80%;
+  }
+  .introducing_fingers_paragraph{
+    font-size: 1rem;
+  }
   .content_documentacion {
     height: 100vh;
     margin-top: 100px;
@@ -119,7 +177,23 @@
 }
 
 @media (max-width: 767px) {
+  .introducing_fingers_title{
+    font-size: 1.5rem;
+  }
+  .introducing_fingers_flex img{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 0%);
 
+    animation-fill-mode: both;
+  }
+  .introducing_fingers_text{
+    width: 80%;
+  }
+  .introducing_fingers_paragraph{
+    font-size: 1rem;
+  }
   .documentacion_flex {
     flex-direction: column;
     flex-direction: column-reverse;
@@ -149,5 +223,6 @@
     font-size: 0.9rem;
 
   }
+
 
 }

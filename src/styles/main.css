@@ -1,8 +1,13 @@
 @import url(./var.css);
 @import url(./font.css);
 
+html {
 
-body{
+    scroll-behavior: smooth;
+
+}
+
+body {
     right: 0;
     left: 0;
     top: 0;
@@ -13,5 +18,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     max-width: 1366px;
     margin: 0 auto;
-    
+    color: #fff;
+
 }

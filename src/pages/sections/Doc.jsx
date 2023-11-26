@@ -1,9 +1,22 @@
 import Mano2 from '/src/assets/Mano2.png'
 import '/src/styles/pages/Doc.css'
+import Hand_descomponet from  '/src/assets/hand_descomponet.png'
 
 export function Doc() {
   return (
     <>
+      <section className="introducing_fingers">
+        <div className="introducing_fingers_flex">
+          <img src={Hand_descomponet} alt="" className="introducing_fingers_img" />
+          <div className="introducing_fingers_text">
+            <h2 className="introducing_fingers_title">Introducing Fingers Bot</h2>
+            <p className="introducing_fingers_paragraph">
+              The fingers bot project had its origin in the concern for knowing how to create a robotic hand that would be very useful for people who may have the need to use it.
+            </p>
+          </div>
+        </div>
+
+      </section>
       <section className="content_documentacion">
         <div className="documentacion_flex">
           <img src={Mano2} alt="  Mano abierta " />
