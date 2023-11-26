@@ -12,7 +12,7 @@ export function Doc() {
               TOGETHER BUILDING A LIMITLESS TOMORROW
             </h2>
 
-            <a href="" className="documentacion_btn">Documentacion</a>
+            <a href="https://drive.google.com/file/d/1ou0TykHbMp_y2RHhzIehaz3O1qlQQCKZ/view" className="documentacion_btn">Documentacion</a>
           </div>
 
         </div>
