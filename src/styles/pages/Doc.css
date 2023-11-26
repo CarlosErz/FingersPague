@@ -82,11 +82,14 @@
   }
   .documentacion_flex{
     flex-direction: column;
+    flex-direction: column-reverse;
+
 
   }
   .documentacion_order{
     margin-left: 0;
     margin-top: 20px;
+    position: relative;
   }
 
 }
@@ -94,22 +97,25 @@
  
   .documentacion_flex{
     flex-direction: column;
+    flex-direction: column-reverse;
 
   }
   .documentacion_flex img{
     width: 100%;
+  
   }
   .documentacion_order{
     margin-left: 0;
     margin-top: 40px;
+    position: relative;
   }
   .documentacion_word{
     font-size: 1.5rem;
-    width: 100%;
+    width: 80%;
 
   }
   .documentacion_btn{
-    width: 50%;
+    width: 80%;
     font-size: 0.9rem;
 
   }

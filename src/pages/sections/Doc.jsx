@@ -7,7 +7,6 @@ export function Doc() {
       <section className="content_documentacion">
         <div className="documentacion_flex">
           <img src={Mano2} alt="  Mano abierta " />
-          <div className="e78_16"></div>
           <div className="documentacion_order">
             <h2 className="documentacion_word">
               TOGETHER BUILDING A LIMITLESS TOMORROW
