@@ -24,20 +24,44 @@ export function Home() {
   }
 
   useEffect(() => {
+    function handleWindowSize() {
+      if (window.innerWidth > 768) {
+        document.querySelector('.nav_content_ul').classList.remove('open');
+        document.querySelector('.menu_icon').style.display = 'none';
+        document.querySelector('.close_icon').style.display = 'none';
+      } else {
+        document.querySelector('.menu_icon').style.display = 'block';
+        if (!document.querySelector('.nav_content_ul').classList.contains('open')) {
+          document.querySelector('.close_icon').style.display = 'none';
+        }
+      }
+    }
+
+    handleWindowSize();
+    window.addEventListener('resize', handleWindowSize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowSize);
+    };
+  }, []);
+
+  useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
       const threshold = 300;
       setIsSticky(scrollPosition < threshold);
     }
 
-    handleScroll(); // Llama a handleScroll() al principio para establecer el estado inicial
-
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   useEffect(() => {
+    // Tu animación GSAP aquí
     const hands1 = document.querySelector('.homeimagen');
     const fingers = document.querySelector('.home_text span');
     const bot = document.querySelector('.home_bot ');
@@ -46,22 +70,26 @@ export function Home() {
 
     tl.fromTo(
       hands1,
-      { y: '100%', opacity: 0.5 }, // Posición inicial: desde abajo de la pantalla
-      { y: '0%', duration: 1, ease: ease, opacity: 1 } // Posición final: a su ubicación original
+      { y: '100%', opacity: 0.5 },
+      { y: '0%', duration: 1, ease: ease, opacity: 1 }
     );
     tl.fromTo(
       fingers,
-      { opacity: 0, x:'100%' }, // Posición inicial: desde abajo de la pantalla
-      { opacity: 1, x:'0%' ,duration: 2, ease: Power4 }, // Posición final: a su ubicación original
+      { opacity: 0, x: '100%' },
+      { opacity: 1, x: '0%', duration: 2, ease: Power4 },
       '-=1'
     );
     tl.fromTo(
       bot,
-      { opacity: 0,x:'-100%'}, // Posición inicial: desde abajo de la pantalla
-      { opacity: 1, x:'0', duration: 2, ease: Power4 }, // Posición final: a su ubicación original
+      { opacity: 0, x: '-100%' },
+      { opacity: 1, x: '0', duration: 2, ease: Power4 },
       '-=1'
     );
-    
+
+    // Devuelve la función de limpieza (cleanup) para GSAP si es necesario
+    return () => {
+      tl.kill(); // Detiene las animaciones si es necesario
+    };
   }, []);
 
   return (
