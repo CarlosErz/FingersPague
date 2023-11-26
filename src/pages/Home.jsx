@@ -26,7 +26,7 @@ export function Home() {
     function handleScroll() {
       const scrollPosition = window.scrollY;
       // Cambia el valor según dónde quieras que el navbar se vuelva sticky
-      const threshold = 400;
+      const threshold = 500;
       if (scrollPosition > threshold) {
         setIsSticky(false);
       } else if (scrollPosition < threshold) {
