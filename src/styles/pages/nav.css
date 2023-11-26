@@ -1,4 +1,14 @@
-/* Estilos CSS */
+/* CSS */
+
+/* Agrega un contenedor para reservar espacio para el menú en su estado normal */
+.nav-placeholder{
+  height: 80px; /* Altura igual a la del menú normal */
+}
+
+
+
+/* Resto de tus estilos CSS... */
+
 .nav_content {
   display: flex;
   align-items: center;
@@ -6,8 +16,9 @@
   height: 80px;
   width: 99%;
   padding: 10px 10px;
-  position: sticky;
+  position: relative;
   z-index: 2;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav_content.sticky {
@@ -17,8 +28,7 @@
   width: 100%;
   background-color: #080013;
   z-index: 1000;
-  transition: all 0.5s ease-in-out;
-  /* Otros estilos que desees */
+  transform: translateY(0%); 
 }
 
 
