@@ -241,6 +241,12 @@
     width: 40px;
     margin-left: 50px;
   }
+  .nav_content.sticky.nav_content img {
+    margin-left: 0;
+  }
+  .nav_content.sticky.nav_content ul {
+    margin-right: 10px;
+  }
 }
 
 
@@ -256,8 +262,8 @@
   }
 
   .homeimagen {
-    width: 200px;
-    height: 707px;
+    height: 50%;
+
   }
 
   .home_text span {
@@ -278,12 +284,13 @@
   .menu_icon {
     display: block;
     /* Mostrar el ícono de menú en dispositivos móviles */
-    margin-right: 15px;
+    margin-right: 20px;
     /* Espacio entre el ícono y los elementos del menú */
   }
 
   .close_icon {
     display: none;
+    margin-right: 40px;
     /* Ocultar el ícono de cerrar menú en dispositivos móviles (se mostrará al abrir el menú) */
   }
 
@@ -310,6 +317,13 @@
   li {
     margin-top: 50px;
   }
+  .nav_content.sticky.nav_content img {
+    margin-left: 0;
+  }
+  .nav_content.sticky.nav_content ul {
+    margin-right: 10px;
+  }
+  
 
 
 }
@@ -324,6 +338,7 @@
   .nav_content {
     height: 30px;
     margin-top: 10px;
+    margin-bottom: 70px;
   }
 
   .nav_content.sticky {
