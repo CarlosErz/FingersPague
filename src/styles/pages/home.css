@@ -21,21 +21,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color:#080013;
+  background-color: #080013;
   z-index: 1000;
   transition: all 0.5s ease-in-out;
   /* Otros estilos que desees */
 }
 
 
-.nav_content.sticky ul{
+.nav_content.sticky ul {
   padding: 20px;
   margin: 0;
-  margin-right: 100px;
+  margin-right: 290px;
 }
-.nav_content.sticky .nav_logo{
+
+.nav_content.sticky .nav_logo {
   transition: all 0.5s ease-in-out;
-  margin-left: 60px;
+  margin-left: 250px;
 }
 
 .nav_content img {
@@ -87,6 +88,15 @@
   z-index: 1;
 }
 
+.home_content img {
+  view-timeline-name: --hands1;
+  view-timeline-axis: block;
+  animation-timeline: --hands1;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
 .home_flex {
   display: flex;
   align-items: center;
@@ -108,6 +118,21 @@
 .homeimagen {
   width: 345px;
   height: 707px;
+
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+
 }
 
 .home_text span {
@@ -295,18 +320,20 @@
     font-size: 40px;
     letter-spacing: 8.96px;
   }
-  .nav_content{
+
+  .nav_content {
     height: 30px;
     margin-top: 10px;
   }
-  .nav_content.sticky{
+
+  .nav_content.sticky {
     margin-top: 0px;
     height: 50px;
   }
 
   .home_text {
     width: 50%;
-    gap:20px;
+    gap: 20px;
 
     align-items: center;
   }
@@ -330,7 +357,8 @@
     width: 30px;
     margin-left: 30px;
   }
-  .nav_content.sticky.nav_content img{
+
+  .nav_content.sticky.nav_content img {
     margin-left: 30px;
   }
 

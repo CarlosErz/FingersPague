@@ -13,6 +13,26 @@
 
 .documentacion_flex img {
   width: 505px;
+  view-timeline-name: --hands;
+  view-timeline-axis: block;
+  animation-timeline: --hands;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes show{
+  from {
+    opacity: 0;
+    scale: 25%;
+
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+
 }
 
 .documentacion_order {
@@ -22,7 +42,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 40%;
-  
+
 }
 
 .documentacion_word {
@@ -59,8 +79,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300%; /* Ajusta el tamaño para cubrir el botón */
-    height: 300%; /* Ajusta el tamaño para cubrir el botón */
+    width: 300%;
+    /* Ajusta el tamaño para cubrir el botón */
+    height: 300%;
+    /* Ajusta el tamaño para cubrir el botón */
     background: radial-gradient(38.82% 38.94% at 50% 50%, #200049 0%, rgba(32, 0, 73, 0.00) 100%);
     mix-blend-mode: lighten;
     transition: 0.5s;
@@ -72,49 +94,56 @@
     opacity: 1;
   }
 }
-@media (min-width: 1025px) and (max-width: 1380px) {
- 
-}
+
+@media (min-width: 1025px) and (max-width: 1380px) {}
+
 @media (min-width: 768px) and (max-width: 1024px) {
-  .content_documentacion{
+  .content_documentacion {
     height: 100vh;
     margin-top: 100px;
   }
-  .documentacion_flex{
+
+  .documentacion_flex {
     flex-direction: column;
     flex-direction: column-reverse;
 
 
   }
-  .documentacion_order{
+
+  .documentacion_order {
     margin-left: 0;
     margin-top: 20px;
     position: relative;
   }
 
 }
+
 @media (max-width: 767px) {
- 
-  .documentacion_flex{
+
+  .documentacion_flex {
     flex-direction: column;
     flex-direction: column-reverse;
 
   }
-  .documentacion_flex img{
+
+  .documentacion_flex img {
     width: 100%;
-  
+
   }
-  .documentacion_order{
+
+  .documentacion_order {
     margin-left: 0;
     margin-top: 40px;
     position: relative;
   }
-  .documentacion_word{
+
+  .documentacion_word {
     font-size: 1.5rem;
     width: 80%;
 
   }
-  .documentacion_btn{
+
+  .documentacion_btn {
     width: 80%;
     font-size: 0.9rem;
 
