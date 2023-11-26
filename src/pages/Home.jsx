@@ -5,8 +5,7 @@ import homeimagen from '../assets/homeimage.webp';
 import { Doc } from './sections/Doc.jsx';
 import { gsap, Power3, Power4 } from "gsap";
 import { Nav } from '../components/Nav.jsx'
-
-
+import { Codelibrary } from '../pages/sections/Codelibrary.jsx';
 
 export function Home() {
 
@@ -59,6 +58,7 @@ export function Home() {
         </div>
       </section>
       <Doc />
+      <Codelibrary />
     </>
   );
 }
