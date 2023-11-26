@@ -29,6 +29,11 @@
     font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 6px;
+    view-timeline-name: --hands;
+    view-timeline-axis: block;
+    animation-timeline: --hands;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
 
 }
 .librarys_icons_flex img{
@@ -36,7 +41,24 @@
     height: 120px;
     filter: invert(1) sepia(2) hue-rotate(20deg) saturate(20%);
     transition: 0.5s;
+    view-timeline-name: --hands;
+    view-timeline-axis: block;
+    animation-timeline: --hands;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
 
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+    
 }
 .librarys_icons_flex .python{
     width: 100px;
