@@ -1,7 +1,5 @@
 .home_section {
   position: relative;
-  height: 100vh;
-  /* Ajusta la altura según tu diseño */
   overflow: hidden;
 }
 
