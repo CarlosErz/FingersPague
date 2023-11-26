@@ -91,9 +91,7 @@
 
 }
 @media (max-width: 767px) {
-  .content_documentacion{
-  
-  }
+ 
   .documentacion_flex{
     flex-direction: column;
 
@@ -106,8 +104,13 @@
     margin-top: 40px;
   }
   .documentacion_word{
-    font-size: 30px;
+    font-size: 1.5rem;
     width: 100%;
+
+  }
+  .documentacion_btn{
+    width: 50%;
+    font-size: 0.9rem;
 
   }
 
