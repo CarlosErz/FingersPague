@@ -25,32 +25,18 @@ export function Home() {
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
-      // Cambia el valor según dónde quieras que el navbar se vuelva sticky
-      const celular = 768; 
-      if (window.innerWidth < celular) {
-        if (scrollPosition > 400) {
-          setIsSticky(false);
-        }
-        if (scrollPosition < 400) {
-          setIsSticky(true);
-        }
-      }
-      if (window.innerWidth > celular) {
-        if (scrollPosition > 500) {
-          setIsSticky(false);
-        }
-        if (scrollPosition < 500) {
-          setIsSticky(true);
-        }
-      }
-      console.log(scrollPosition);
+      const threshold = 300;
+      setIsSticky(scrollPosition < threshold); 
     }
-
+  
+    handleScroll(); // Llama a handleScroll() al principio para establecer el estado inicial
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
     return (
       <>
         <section className='home_section'>
