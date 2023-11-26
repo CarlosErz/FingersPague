@@ -28,10 +28,10 @@ export function Home() {
       // Cambia el valor según dónde quieras que el navbar se vuelva sticky
       const celular = 768; 
       if (window.innerWidth < celular) {
-        if (scrollPosition > 800) {
+        if (scrollPosition > 400) {
           setIsSticky(false);
         }
-        if (scrollPosition < 800) {
+        if (scrollPosition < 400) {
           setIsSticky(true);
         }
       }
