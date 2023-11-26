@@ -26,11 +26,22 @@ export function Home() {
     function handleScroll() {
       const scrollPosition = window.scrollY;
       // Cambia el valor según dónde quieras que el navbar se vuelva sticky
-      const threshold = 500;
-      if (scrollPosition > threshold) {
-        setIsSticky(false);
-      } else if (scrollPosition < threshold) {
-        setIsSticky(true);
+      const celular = 768; 
+      if (window.innerWidth < celular) {
+        if (scrollPosition > 800) {
+          setIsSticky(false);
+        }
+        if (scrollPosition < 800) {
+          setIsSticky(true);
+        }
+      }
+      if (window.innerWidth > celular) {
+        if (scrollPosition > 500) {
+          setIsSticky(false);
+        }
+        if (scrollPosition < 500) {
+          setIsSticky(true);
+        }
       }
       console.log(scrollPosition);
     }
