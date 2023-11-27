@@ -6,7 +6,7 @@ import '/src/styles/pages/librarys.css'
 export function Codelibrary() {
   return (
     <>
-    <section className="librarys" id='librarys'>
+    <section id='libraries' className="librarys">
       <div className="librarys_flex">
         <h2 className="library_title">
         LIBRARIES
@@ -18,7 +18,7 @@ export function Codelibrary() {
       </div>
       </div>
     </section>
-    <section className="librarys">
+    <section  className="librarys">
       <div className="librarys_flex">
         <h2 className="library_title">
         LANGUAGES

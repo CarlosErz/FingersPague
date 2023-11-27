@@ -42,7 +42,7 @@ export function Home() {
 
   return (
     <>
-      <section className='home_section'>
+      <section id='home' className='home_section'>
         <Nav />
         <div className="home_content">
           <div className="home_flex">

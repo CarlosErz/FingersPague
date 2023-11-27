@@ -77,9 +77,10 @@ export function Nav() {
           </span>
 
           <ul className='nav_content_ul'>
+            <li><a title='Home' className='nav_link' href="#home">Home</a></li>
             <li><a title='Home' className='nav_link' href="#introducing">Introducing</a></li>
             <li><a className='nav_link' href="#documentacion">Documentacion</a></li>
-            <li><a className='nav_link' href="">Contact</a></li>
+            <li><a className='nav_link' href="#libraries">Libraries</a></li>
           </ul>
         </nav>
       </div>
