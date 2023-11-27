@@ -10,7 +10,6 @@ import { Codelibrary } from '../pages/sections/Codelibrary.jsx';
 export function Home() {
 
   useEffect(() => {
-    // Tu animación GSAP aquí
     const hands1 = document.querySelector('.homeimagen');
     const fingers = document.querySelector('.home_text span');
     const bot = document.querySelector('.home_bot ');
@@ -57,7 +56,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <Doc />
+      <Doc/>
       <Codelibrary />
     </>
   );

@@ -5,7 +5,7 @@ import Hand_descomponet from  '/src/assets/hand_descomponet.png'
 export function Doc() {
   return (
     <>
-      <section className="introducing_fingers">
+      <section id='introducing' className="introducing_fingers">
         <div className="introducing_fingers_flex">
           <img src={Hand_descomponet} alt="" className="introducing_fingers_img" />
           <div className="introducing_fingers_text">
@@ -17,7 +17,7 @@ export function Doc() {
         </div>
 
       </section>
-      <section className="content_documentacion">
+      <section id='documentacion' className="content_documentacion">
         <div className="documentacion_flex">
           <img src={Mano2} alt="  Mano abierta " />
           <div className="documentacion_order">
