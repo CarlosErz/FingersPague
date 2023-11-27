@@ -105,7 +105,40 @@
   font-size: 2rem;
   /* Tamaño del texto */
 }
+.pythoncode{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.python-highlighter{
+  width: 50%; /* Ajusta el ancho según lo necesites */
+  height: 50%;
+}
 
+.flex_btn_content{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow-y: hidden;
+
+}
+.Showbtn{
+ background-color: #411f6a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 0 10px;
+  
+}
 
 /* Animación del borde */
 @keyframes animatedBorder {

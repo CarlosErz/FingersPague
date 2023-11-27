@@ -6,6 +6,7 @@ import { Doc } from './sections/Doc.jsx';
 import { gsap, Power3, Power4 } from "gsap";
 import { Nav } from '../components/Nav.jsx'
 import { Codelibrary } from '../pages/sections/Codelibrary.jsx';
+import {Code} from '../pages/sections/code.jsx'
 
 export function Home() {
 
@@ -58,6 +59,7 @@ export function Home() {
       </section>
       <Doc/>
       <Codelibrary />
+      <Code/>
     </>
   );
 }
