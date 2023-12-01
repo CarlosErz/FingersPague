@@ -1,4 +1,5 @@
 import { Home } from './pages/Home'
+import video_fondo from './assets/Video Fondo_final.mp4'
 import './styles/main.css'
 import './styles/font.css'
 
@@ -7,12 +8,11 @@ function App() {
   return (
     <>
       <div className="background_container">
+        <video src={video_fondo} loop playsInline autoPlay  muted>
+        </video>
         <img src={background} alt="Fondo con degradado" />
       </div>
       <Home />
-
-
-
     </>
   )
 }
