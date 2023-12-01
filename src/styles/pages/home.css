@@ -11,7 +11,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  
+
   z-index: 1;
 }
 
@@ -21,7 +21,7 @@
   object-fit: cover;
   position: relative;
   z-index: -1;
-  opacity: 90%;
+  opacity: 80%;
 
 }
 .background_container video{
