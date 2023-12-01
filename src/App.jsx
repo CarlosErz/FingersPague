@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <div className="background_container">
-        <video src={video_fondo} loop playsInline autoPlay  muted>
+        <video src={video_fondo}  preload={background}  loop  autoPlay  muted>
+        
         </video>
         <img src={background} alt="Fondo con degradado" />
       </div>
