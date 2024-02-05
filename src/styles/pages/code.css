@@ -1,0 +1,77 @@
+.code{
+text-align: center;
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.flex_button_code{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+.button_Git{
+  background-color: #200049;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  animation: animatedBorder 2s infinite;
+  transition: 0.5s ease all;
+}
+.button_Git>img{
+  filter: brightness(0) invert(1);
+}
+.button_Git>span{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.button_Git:hover{
+  animation: animatedBorder 2s infinite;
+  background-color: #340078;
+  border: 1px solid ;
+
+}
+@keyframes animatedBorder {
+  0% {
+    border-color: #9e54ff;
+
+    background-position: 30% 50%;
+  }
+  50% {
+    border-color: #8629ff;
+    background-position: 50% 50%;
+  }
+  75% {
+    border-color: #760dff;
+    background-position: 70% 50%;
+  }
+  100% {
+    border-color: #200049;
+    background-position: 100% 50%;
+  }
+  
+}
+@media screen and (max-width: 767px) {
+  .code{
+    height: 60vh;
+  }
+  .flex_button_code{
+    width: 80%;
+  }
+  .button_Git{
+    font-size: 1rem;
+  }
+  
+}
