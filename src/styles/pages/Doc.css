@@ -1,5 +1,5 @@
 .introducing_fingers{
-
+ 
   margin-top: 80px;
 
 }
@@ -138,6 +138,9 @@
 @media (min-width: 1025px) and (max-width: 1380px) {}
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .introducing_fingers{
+    height: 100vh;
+  }
   .introducing_fingers_title{
     font-size: 1.5rem;
   }
@@ -176,8 +179,19 @@
 }
 
 @media (max-width: 767px) {
+
+  .introducing_fingers{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
   .introducing_fingers_title{
     font-size: 1.5rem;
+  }
+  .introducing_fingers_flex{
+    justify-content: center;
+    margin:  0 auto;
+    top: 20%;
   }
   .introducing_fingers_flex img{
     width: 80%;

@@ -1,6 +1,6 @@
-import Mano2 from '/src/assets/Mano2.png'
+import Mano2 from '/src/assets/Mano2.webp'
 import '/src/styles/pages/Doc.css'
-import Hand_descomponet from  '/src/assets/hand_descomponet.png'
+import Hand_descomponet from  '/src/assets/hand_descomponet.webp'
 
 export function Doc() {
   return (
