@@ -18,33 +18,21 @@ fs.readdir(carpetaEntrada, async (err, archivos) => {
   // Procesa cada archivo en la carpeta de entrada
   for (const archivo of archivos) {
     const rutaEntrada = `${carpetaEntrada}/${archivo}`;
+    const ext = archivo.split('.').pop().toLowerCase();
 
-    // Ignora carpetas y archivos SVG
-    if (fs.lstatSync(rutaEntrada).isDirectory() || archivo.endsWith('.svg')) {
+    // Ignora carpetas y archivos que no sean WebP
+    if (fs.lstatSync(rutaEntrada).isDirectory() || ext !== 'webp') {
       console.log(`${archivo} ignorada.`);
       continue;
     }
 
-    const ext = archivo.split('.').pop().toLowerCase();
-    const esImagen = ext === 'png' || ext === 'jpeg' || ext === 'jpg';
-
-    // Verifica si el archivo es una imagen antes de procesarlo
-    if (esImagen) {
-      const rutaSalida = `${carpetaSalida}/${archivo.replace(/\.[^/.]+$/, '')}.webp`;
-      await sharp(rutaEntrada)
-        .webp({ quality: 90 })  // Reducir la calidad de la imagen a 50%
-        .toFile(rutaSalida, (err) => {
-          if (err) {
-            console.error(`Error al procesar ${archivo}:`, err);
-          } else {
-            console.log(`${archivo} procesada con éxito.`);
-          }
-        });
-    } else {
-      // Si no es una imagen, simplemente copia el archivo a la carpeta de salida
+    // Procesa y optimiza el archivo WebP
+    try {
       const rutaSalida = `${carpetaSalida}/${archivo}`;
-      fs.copyFileSync(rutaEntrada, rutaSalida);
-      console.log(`${archivo} copiada sin procesamiento.`);
+      await sharp(rutaEntrada).webp({ quality: 90 }).toFile(rutaSalida);
+      console.log(`${archivo} procesada con éxito.`);
+    } catch (error) {
+      console.error(`Error al procesar ${archivo}:`, error);
     }
   }
 });

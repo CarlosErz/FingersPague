@@ -19,7 +19,7 @@ export function Doc() {
       </section>
       <section id='documentacion' className="content_documentacion">
         <div className="documentacion_flex">
-          <img src={Mano2} alt="  Mano abierta " />
+          <img src={Mano2} alt="  Mano abierta " loading='lazy' />
           <div className="documentacion_order">
             <h2 className="documentacion_word">
               TOGETHER BUILDING A LIMITLESS TOMORROW

@@ -4,15 +4,17 @@
   src: url('./font/static/Montserrat-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
+
 /* Montserrat Light */
 @font-face {
   font-family: 'Montserrat';
   src: url('./font/static/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
-
 
 /* Montserrat Medium */
 @font-face {
@@ -20,6 +22,7 @@
   src: url('./font/static/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
 
 /* Montserrat Bold */
@@ -28,6 +31,7 @@
   src: url('./font/static/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
 
 /* Montserrat ExtraBold */
@@ -36,6 +40,7 @@
   src: url('./font/static/Montserrat-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
 
 /* Montserrat Black */
@@ -44,6 +49,5 @@
   src: url('./font/static/Montserrat-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap; /* Agrega esta línea para aprovechar font-display */
 }
-
-
